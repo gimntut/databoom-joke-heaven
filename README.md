@@ -1,4 +1,4 @@
-# joke-heaven
+# databoom-joke-heaven
 Все анекдоты попадают в рай
 
 ## Сценарий
