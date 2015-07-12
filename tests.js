@@ -1,5 +1,5 @@
 QUnit.test("joke-heaven wrapper tests", function(assert) {
-    assert.ok(true, "");
+    assert.ok(true, "Start tests");
     var db = connectTo('gimntut', 'elf-chat');
     db.login('user', 'user');
     db.save('table1', '[{"id":"test", "a":"2"}]').done(checkInsert).fail(fail);
