@@ -1,0 +1,52 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.wrapper,
+.content,
+.feed {
+    height: 100%;
+}
+
+.wrapper, .grid, .content, .feed {
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 1024px;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+
+header {
+    height: 100px;
+}
+
+.grid {
+    width: 960px;
+    height: calc(100% - 200px);
+}
+
+.content {
+    width: 100%;
+}
+.feed {
+    flex-grow: 1;
+    box-sizing: border-box;
+    width: 320px;
+}
+
+footer {
+    height: 100px;
+}

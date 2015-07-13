@@ -1,1 +1,4 @@
-
+$(init);
+function init () {
+	
+}

@@ -10,7 +10,7 @@ QUnit.test("joke-heaven wrapper tests", function(assert) {
         db.get({
             'path': 'table1(test)'
         }).done(checkGet).fail(fail);
-    };
+    }
 
     function checkGet(data, textStatus, jqXHR) {
         console.log(data);
@@ -18,7 +18,7 @@ QUnit.test("joke-heaven wrapper tests", function(assert) {
         assert.ok(object.a == "2", "checkGet passed!");
         object.a = "3";
         db.save('table1', JSON.stringify(object)).done(checkUpdate);
-    };
+    }
 
     function checkUpdate(data, textStatus, jqXHR) {
         console.log(data);
@@ -51,7 +51,7 @@ QUnit.test("joke-heaven wrapper tests", function(assert) {
     function fail(jqXHR, textStatus, errorThrown) {
         console.log(jqXHR, textStatus, errorThrown);
         assert.push(true, true, "", textStatus);
-    };
+    }
 });
 
 // QUnit.test("joke-heaven databoom.js tests", function(assert) {
